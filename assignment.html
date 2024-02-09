@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment</title>
+	<script>
+		// < Requests the user to input a positive number
+		// > Alerts the user on how big the number is verbally
+		// ! Alerts the user if the number isn't positive
+		function Ex1() {
+			var num = prompt('Enter a positive number');
+
+			num = Number(num);
+
+			if (num < 0) {
+				alert('The number is negative');
+			}
+			else if (num <= 100) {
+				alert('Small');
+			}
+			else if (num <= 1000) {
+				alert('Medium');
+			}
+			else {
+				alert('Large');
+			}
+		}
+
+		// < Requests the user to input a first name
+		// < Requests the user to input a last name
+		// > Welcomes the user back to the system
+		function Ex2() {
+			var firstName = prompt('Enter your first name');
+			var lastName = prompt('Enter your last name');
+
+			// I really want to use this but I forgot
+			// to ask the teacher if I can use
+			// interpolated strings.
+			// So, I'll just leave this here as a sign
+			// that interpolated strings are superior.
+			//
+			// alert(`Hello ${firstName} ${lastName}.\nWelcome back to the system.`);
+			// I also wish I could've used \n for new lines.
+			// Though, I haven't tested if that even works
+			// in the alert-box.
+			alert('Hello, ' + firstName + ' ' + lastName + '. Welcome back to the system.');
+		}
+
+		// < Requests the user to enter their password
+		// > Alerts the user whether the verification succeeded or not
+		function Ex3() {
+			var password = prompt('Enter your password');
+
+			if (password == 'hackeru123') {
+				alert('Verification success');
+			}
+			else {
+				alert('Verification failure (password incorrect)');
+			}
+		}
+
+		// < Requests the user to input their age
+		// > Alerts the user on whether they're permitted to enter X or not
+		function Ex4() {
+			var age = prompt('Enter your age');
+
+			age = Number(age);
+
+			if (age < 16) {
+				alert('Entry not permitted (too young)');
+			}
+			else if (age <= 18) {
+				alert('Entry only permitted with a legal guardian');
+			}
+			else {
+				alert('Unrestricted entry permitted');
+			}
+		}
+
+		// < Requests a number from the user
+		// < Requests another number from the user
+		// < Requests an operator (+, -) from the user
+		// > Alerts the user with the answer to the math equation
+		// ! Alerts the user if the operator is invalid
+		function Ex5() {
+			var num1 = prompt('Enter the first number');
+			var num2 = prompt('Enter the second number');
+			var op = prompt('Enter the operator');
+
+			num1 = Number(num1);
+			num2 = Number(num2);
+
+			if (op == '+') {
+				alert(num1 + num2);
+			}
+			else if (op == '-') {
+				alert(num1 - num2);
+			}
+			else {
+				alert('Invalid operator');
+			}
+		}
+	</script>
+</head>
+
+<body style="color: white; background-color: rgb(24, 24, 24)">
+	<!-- Title -->
+	<h1 style="font-size: 48px; background-color: rgb(64, 64, 64); text-align: center;">Assignment</h1>
+	<hr> <br>
+
+	<!-- Content -->
+	<br>
+	<h2 style="background-color: rgb(48, 48, 48)">Disclaimer</h6>
+		<p>
+			Hello!
+			<br>
+			This is a small disclaimer about my assignment.
+			<br>
+			I prefer using <span style="font-weight:bold;">English</span> as compared to Hebrew for various reasons.
+			<br>
+			Mainly, it's simply easier for me to format and design the document when everything is in the same language.
+			<br>
+			This shouldn't, and wouldn't affect my ability to make the same exact document in hebrew.
+			<br>
+			Rather, it will simply slow me down and reduce my efficiency, if I had chosen to write this in Hebrew.
+			<br>
+			<br>
+			In addition to all of the above, I used <span style="font-weight:bold;">Internet Explorer 11</span> (for
+			Windows 10) to create and test this document.
+			<br>
+			This could lead to incompatibilities with other browsers, and thus, I would like to apologize for any
+			inconvenience.
+		</p>
+
+		<br>
+		<h2 style="background-color: rgb(48, 48, 48)">Full Name:</h2>
+		<p>Shimon Levy</p>
+
+		<br>
+		<h2 style="background-color: rgb(48, 48, 48)">Phone Number</h2>
+		<p>+972 54 328 4557</p>
+
+		<br>
+		<h2 style="background-color: rgb(48, 48, 48)">Hardest Part During the Project</h2>
+		<p>
+			As a matter of fact, it wasn't hard at all.
+			<br>
+			Practice makes perfect, and I had a whole lot of practice.
+		</p>
+
+		<br>
+		<h2 style="background-color: rgb(48, 48, 48)">Most Enjoyable Part During the Project</h2>
+		<p>
+			Literally all of it was so much fun to make, simply because it was so straightforward.
+			<br>
+			Specifically JavaScript is a lot of fun as compared to HTML/CSS.
+		</p>
+
+		<br>
+		<h2 style="background-color: rgb(48, 48, 48)">Why Do I Think That This (Work-)Domain Is for Me?</h2>
+		<p>
+			Going off with the assumption that it wasn't clear so far...
+			<br>
+			I really enjoy programming, scripting, designing and the like!
+			<br>
+			I enjoy seeing my little creations flourish and come to life!
+			<br>
+			I also have the motivation to learn and the persistence and whatever else might be needed to keep it up even
+			when it's hard.
+		</p>
+
+		<br>
+		<h2 style="background-color: rgb(48, 48, 48)">A Summary of the Course's Trial-Run</h2>
+		<p>
+			I really enjoyed it, not only because it was exactly what I love doing, but also because I learnt a lot of
+			new things.
+			<br>
+			Yes, even though I code a whole bunch, I never really touched any web related coding, so this was fresh!
+			<br>
+			Honestly, I'm glad that I took this course, and I'm hoping to continue it right to the end and fulfil my
+			dream as a .NET software engineer.
+		</p>
+
+		<br>
+		<h2 style="background-color: rgb(48, 48, 48)">ButtonsVille</h2>
+		<p>
+			<button style="border-color: rgb(128, 128, 128); color: white; background-color: gray;"
+				onclick="Ex1()">Assignment #1</button>
+			<button style="border-color: rgb(128, 128, 128); color: white; background-color: gray;"
+				onclick="Ex2()">Assignment #2</button>
+			<button style="border-color: rgb(128, 128, 128); color: white; background-color: gray;"
+				onclick="Ex3()">Assignment #3</button>
+			<button style="border-color: rgb(128, 128, 128); color: white; background-color: gray;"
+				onclick="Ex4()">Assignment #4</button>
+			<button style="border-color: rgb(128, 128, 128); color: white; background-color: gray;"
+				onclick="Ex5()">Assignment #5</button>
+		</p>
+</body>
+
+</html>
